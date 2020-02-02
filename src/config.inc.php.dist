@@ -1,0 +1,12 @@
+<?php
+declare(strict_types=1);
+
+class Config
+{
+
+    public const DB_DSN = 'mysql:host=localhost;dbname=tibiafunhof;charset=utf8mb4';
+
+    public const DB_USERNAME = "tibiafunhof";
+
+    public const DB_PASSWORD = "sample_password_xRQXCXNxgNpkMV9eWY";
+}
