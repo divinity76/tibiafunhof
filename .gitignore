@@ -1,0 +1,2 @@
+# config.inc.php contains sensitive data (db password etc)
+/src/config.inc.php
