@@ -121,7 +121,7 @@ class Character
         $stm = $db->prepare('INSERT INTO exp_records (`character_id`,`online`,`level`,`calculated_exp`) VALUES(:character_id,:is_online,:level,:calculated_exp);');
         $stm->execute(array(
             ':character_id' => $this->id,
-            ':is_online' => $this->is_online,
+            ':is_online' => $this->is_online ? "1" : "0",
             ':level' => $this->new_level,
             ':calculated_exp' => experience_for_level($this->new_level)
         ));
@@ -211,7 +211,7 @@ function fetchAllCharacterNames(): array
             $ret[] = $name;
         }
     }
-    //$ret = array_reverse($ret, false);
+    // $ret = array_reverse($ret, false);
     return $ret;
 }
 
