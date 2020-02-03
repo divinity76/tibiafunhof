@@ -211,7 +211,7 @@ function fetchAllCharacterNames(): array
             $ret[] = $name;
         }
     }
-    $ret = array_reverse($ret, false);
+    //$ret = array_reverse($ret, false);
     return $ret;
 }
 
