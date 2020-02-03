@@ -67,7 +67,7 @@ for ($pageNum = 0; $pageNum < 999; ++ $pageNum) {
         }
         $addExpRecordStm->execute(array(
             ':character_id' => $nd->id,
-            ':online' => $nd->online,
+            ':online' => ($nd->online ? 1 : 0),
             ':level' => $nd->level,
             ':calculated_exp' => $nd->calculated_exp
         ));
